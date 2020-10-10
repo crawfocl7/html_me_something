@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+}
+
+.heart {
+    font-size: 60px;
+    color: rgb(198, 14, 51);
+    animation: beat .7s infinite alternate;
+    transform-origin: center;
+}
+
+.heading {
+  background-image: linear-gradient(rgba(255,255,255,0.3), 20%, rgba(255,255,255,0.3)), url(https://images.unsplash.com/photo-1510027580951-31747e2371a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60) ;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+    to { transform: scale(1.2); }
+}
+
+.item1 { grid-area: header; }
+.item1_2 { grid-area: mainHeader; margin-block-start: 0px; background-color: rgb(152, 164, 178); padding: 20px; text-align: center;  }
+.item2 { grid-area: main; margin-block-start: 0px; background-color: rgb(152, 164, 178); padding: 20px; }
+
+.item3 { grid-area: main2; margin-block-start: 0px; background-color: rgb(152, 164, 178); padding: 20px;}
+.item4 { grid-area: footer; background-color: rgb(215, 196, 212); padding: 20px; }
+.item5 { grid-area: footer1; text-align: left; background-color: rgb(192, 188, 188); padding: 20px; }
+
+.item1_2 .bodyHeading {
+  text-align: center;
+}
+
+.item3 .bodyHeading {
+  text-align: center;
+}
+
+.item4 .bodyHeading {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader'
+    'main main main main main main'
+    'main2 main2 main2 main2 main2 main2'
+    'footer footer footer footer footer footer'
+    'footer1 footer1 footer1 footer1 footer1 footer1';
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-block-start: 0px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+body {
+  background-color: rgb(152, 164, 178);
+}
+
+.bodyHeading {
+  font-size: 22px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: left;
+}
+
+.bodyText{
+  text-align: left;
+  font-family: verdana;
+}
+
+.listItems{
+  font-family: verdana;
+  text-align: left;
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#item2Photos img{
+  width: 150px;
+  height: 150px;
+  margin-left: -4px;
+  margin-top: -5px;
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+
+}
+
+.item3 img{
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-top: 25px;
+  border-radius: 50%;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+}
+
+.item4 img{
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  border-radius: 50%;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+}
