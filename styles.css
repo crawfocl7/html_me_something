@@ -109,6 +109,9 @@ body {
 
 }
 
+.pic_container {
+  margin: 100% 25%%;
+}
 .item3 img{
   width: 150px;
   height: 150px;
